@@ -1,0 +1,16 @@
+{
+  "name": "linux_friendly_man",
+  "version": "1.0.0",
+  "description": "Linux Friendly Man Pages",
+  "main": "Readme.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "linux",
+    "cli",
+    "commands"
+  ],
+  "author": "andrew",
+  "license": "ISC"
+}
