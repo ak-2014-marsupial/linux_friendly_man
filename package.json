@@ -1,5 +1,6 @@
 {
   "name": "linux_friendly_man",
+  "homepage": "https://ak-2014-marsupial.github.io/linux_friendly_man",
   "version": "1.0.0",
   "description": "Linux Friendly Man Pages",
   "main": "Readme.md",
