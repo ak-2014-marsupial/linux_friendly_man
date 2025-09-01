@@ -1,5 +1,6 @@
-# Linux Friendly Manual
-
+*{{ site.annotation }}*
+*{{ site.description }}*
+---
 ## Архівація та стиснення
 *   [bzip2](./documents/archiving/bzip2.md)
 *   [gzip](./documents/archiving/gzip.md)
