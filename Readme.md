@@ -7,22 +7,22 @@
 ## 1. Робота з файлами та директоріями
 
 - [ls](./documents/file_and_directory_management/ls.md) (list) — вивести список файлів і директорій.
-- cd (change directory) — змінити поточну директорію.
-- pwd (print working directory) — показати повний шлях до поточної директорії.
-- mkdir (make directory) — створити нову директорію.
-- rmdir (remove directory) — видалити порожню директорію.
-- touch — створити порожній файл або змінити його час доступу/модифікації.
-- cp (copy) — копіювати файли та директорії.
-- mv (move) — перемістити або перейменувати файли та директорії.
-- rm (remove) — видалити файли або директорії.
+- [cd](./documents/file_and_directory_management/cd.md) (change directory) — змінити поточну директорію.
+- [pwd](./documents/file_and_directory_management/pwd.md) (print working directory) — показати повний шлях до поточної директорії.
+- [mkdir](./documents/file_and_directory_management/mkdir.md) (make directory) — створити нову директорію.
+- [rmdir](./documents/file_and_directory_management/rmdir.md) (remove directory) — видалити порожню директорію.
+- [touch](./documents/file_and_directory_management/touch.md) — створити порожній файл або змінити його час доступу/модифікації.
+- [cp](./documents/file_and_directory_management/cp.md) (copy) — копіювати файли та директорії.
+- [mv](./documents/file_and_directory_management/mv.md) (move) — перемістити або перейменувати файли та директорії.
+- [rm](./documents/file_and_directory_management/rm.md) (remove) — видалити файли або директорії.
 
 ## 2. Перегляд та редагування файлів
 
-- cat (concatenate) — вивести вміст файлу на екран.
-- [less](./documents/file_viewing_and_editing/less.md) та more — посторінково вивести вміст файлу.
-- head — показати перші рядки файлу.
-- tail — показати останні рядки файлу.
-- nano — простий текстовий редактор у терміналі.
+- [cat](./documents/file_viewing_and_editing/cat.md) (concatenate) — вивести вміст файлу на екран.
+- [less](./documents/file_viewing_and_editing/less.md) та [more](./documents/file_viewing_and_editing/more.md) — посторінково вивести вміст файлу.
+- [head](./documents/file_viewing_and_editing/head.md) — показати перші рядки файлу.
+- [tail](./documents/file_viewing_and_editing/tail.md) — показати останні рядки файлу.
+- [nano](./documents/file_viewing_and_editing/nano.md) — простий текстовий редактор у терміналі.
 - [vi/vim](./documents/file_viewing_and_editing/vi.md) — потужний, але складніший текстовий редактор.
 - [awk](./documents/file_viewing_and_editing/awk.md) — мова для сканування та обробки тексту.
 - [sed](./documents/file_viewing_and_editing/sed.md) — потоковий редактор для фільтрації та перетворення тексту.
@@ -37,24 +37,24 @@
 
 ## 4. Управління користувачами та правами доступу
 
-- useradd / adduser — створити нового користувача.
-- usermod — змінити параметри існуючого користувача.
-- userdel — видалити користувача.
-- groupadd — створити нову групу.
-- passwd — змінити пароль користувача.
-- chmod (change mode) — змінити права доступу до файлів.
-- chown (change owner) — змінити власника файлу/директорії.
-- chgrp (change group) — змінити групу, до якої належить файл.
+- [useradd / adduser](./documents/user_and_permission_management/useradd.md) — створити нового користувача.
+- [usermod](./documents/user_and_permission_management/usermod.md) — змінити параметри існуючого користувача.
+- [userdel](./documents/user_and_permission_management/userdel.md) — видалити користувача.
+- [groupadd](./documents/user_and_permission_management/groupadd.md) — створити нову групу.
+- [passwd](./documents/user_and_permission_management/passwd.md) — змінити пароль користувача.
+- [chmod](./documents/user_and_permission_management/chmod.md) (change mode) — змінити права доступу до файлів.
+- [chown](./documents/user_and_permission_management/chown.md) (change owner) — змінити власника файлу/директорії.
+- [chgrp](./documents/user_and_permission_management/chgrp.md) (change group) — змінити групу, до якої належить файл.
 - [su](./documents/user_and_permission_management/su.md) (switch user) — переключитися на іншого користувача.
 - [sudo](./documents/user_and_permission_management/sudo.md) (superuser do) — виконати команду з правами адміністратора.
 
 ## 5. Моніторинг процесів та системні ресурси
 
-- ps (process status) — показати список поточних процесів.
+- [ps](./documents/process_and_system_monitoring/ps.md) (process status) — показати список поточних процесів.
 - [top](./documents/process_and_system_monitoring/top.md) — динамічно відстежувати процеси та використання ресурсів.
-- htop — покращена, інтерактивна версія top.
-- kill — завершити процес за його ID (PID).
-- pkill — завершити процес за його іменем.
+- [htop](./documents/process_and_system_monitoring/htop.md) — покращена, інтерактивна версія top.
+- [kill](./documents/process_and_system_monitoring/kill.md) — завершити процес за його ID (PID).
+- [pkill](./documents/process_and_system_monitoring/pkill.md) — завершити процес за його іменем.
 - [df](./documents/process_and_system_monitoring/df.md) (disk free) — показати використання дискового простору.
 - [du](./documents/process_and_system_monitoring/du.md) (disk usage) — оцінити розмір директорії або файлу.
 - [free](./documents/process_and_system_monitoring/free.md) — показати обсяг вільної та використаної пам'яті.
@@ -62,12 +62,12 @@
 ## 6. Управління пакетами
 
 Для Debian/Ubuntu:
-- apt / apt-get — керувати встановленням, оновленням та видаленням пакетів.
+- [apt / apt-get](./documents/package_management/apt.md) — керувати встановленням, оновленням та видаленням пакетів.
 
 Для CentOS/Red Hat:
 - yum / [dnf](./documents/package_management/dnf.md) — керувати пакетами.
 
-- dpkg — керувати пакетами в Debian-системах.
+- [dpkg](./documents/package_management/dpkg.md) — керувати пакетами в Debian-системах.
 - [rpm](./documents/package_management/rpm.md) — керувати пакетами в Red Hat-системах.
 
 ## 7. Робота з архівами
@@ -79,21 +79,21 @@
 
 ## 8. Мережеві команди
 
-- ping — перевірити доступність мережевого вузла.
-- ssh (secure shell) — безпечно підключитися до віддаленого сервера.
-- scp (secure copy) — безпечно копіювати файли між серверами.
-- wget / curl — завантажити файли з інтернету.
-- ifconfig / ip — показати інформацію про мережеві інтерфейси.
-- netstat / ss — показати мережеві підключення та статистику.
+- [ping](./documents/network_commands/ping.md) — перевірити доступність мережевого вузла.
+- [ssh](./documents/network_commands/ssh.md) (secure shell) — безпечно підключитися до віддаленого сервера.
+- [scp](./documents/network_commands/scp.md) (secure copy) — безпечно копіювати файли між серверами.
+- [wget](./documents/network_commands/wget.md) / [curl](./documents/network_commands/curl.md) — завантажити файли з інтернету.
+- [ifconfig / ip](./documents/network_commands/ip.md) — показати інформацію про мережеві інтерфейси.
+- [netstat / ss](./documents/network_commands/netstat.md) — показати мережеві підключення та статистику.
 
 ## 9. Системні утиліти
 
-- shutdown / reboot — вимкнути або перезавантажити систему.
-- date — показати або встановити системну дату та час.
-- history — показати список раніше виконаних команд.
-- man (manual) — відкрити довідкову сторінку для команди.
-- journalctl — переглянути логи системи (у systemd).
-- crontab — планувати автоматичне виконання завдань.
+- [shutdown / reboot](./documents/system_utilities/shutdown.md) — вимкнути або перезавантажити систему.
+- [date](./documents/system_utilities/date.md) — показати або встановити системну дату та час.
+- [history](./documents/system_utilities/history.md) — показати список раніше виконаних команд.
+- [man](./documents/system_utilities/man.md) (manual) — відкрити довідкову сторінку для команди.
+- [journalctl](./documents/system_utilities/journalctl.md) — переглянути логи системи (у systemd).
+- [crontab](./documents/system_utilities/crontab.md) — планувати автоматичне виконання завдань.
 
 ## 10. Ключові системні файли та директорії
 
