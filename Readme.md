@@ -94,6 +94,8 @@
 - [man](./documents/system_utilities/man.md) (manual) — відкрити довідкову сторінку для команди.
 - [journalctl](./documents/system_utilities/journalctl.md) — переглянути логи системи (у systemd).
 - [crontab](./documents/system_utilities/crontab.md) — планувати автоматичне виконання завдань.
+- [type](./documents/system_utilities/type.md) — відобразити інформацію про тип команди.
+- [xargs](./documents/system_utilities/xargs.md) — побудувати та виконати командні рядки зі стандартного вводу.
 
 ## 10. Ключові системні файли та директорії
 
