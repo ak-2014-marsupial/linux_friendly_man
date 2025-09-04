@@ -79,12 +79,27 @@
 
 ## 8. Мережеві команди
 
-- [ping](./documents/network_commands/ping.md) — перевірити доступність мережевого вузла.
-- [ssh](./documents/network_commands/ssh.md) (secure shell) — безпечно підключитися до віддаленого сервера.
-- [scp](./documents/network_commands/scp.md) (secure copy) — безпечно копіювати файли між серверами.
-- [wget](./documents/network_commands/wget.md) / [curl](./documents/network_commands/curl.md) — завантажити файли з інтернету.
-- [ifconfig / ip](./documents/network_commands/ip.md) — показати інформацію про мережеві інтерфейси.
-- [netstat / ss](./documents/network_commands/netstat.md) — показати мережеві підключення та статистику.
+*Налаштування та моніторинг локальних інтерфейсів*
+- [ip](./documents/network_commands/ip.md) / ifconfig — показ та налаштування мережевих інтерфейсів.
+- [netstat](./documents/network_commands/netstat.md) / ss — аналіз активних з'єднань та відкритих портів.
+
+*Робота з DNS*
+- [host](./documents/network_commands/host.md) — проста утиліта для DNS-запитів.
+- [nslookup](./documents/network_commands/nslookup.md) — інтерактивна утиліта для запитів до DNS-серверів.
+- [dig](./documents/network_commands/dig.md) — інструмент для детальних DNS-запитів.
+
+*Діагностика та сканування мережі*
+- [ping](./documents/network_commands/ping.md) — перевірка доступності вузла та вимірювання затримки.
+- [telnet](./documents/network_commands/telnet.md) — перевірка відкритості TCP-портів.
+- [nc](./documents/network_commands/nc.md) (netcat) — утиліта для роботи з TCP/UDP, сканування, передачі даних.
+- [traceroute](./documents/network_commands/traceroute.md) — відстеження маршруту пакетів до вузла.
+- [nmap](./documents/network_commands/nmap.md) — сканер мереж для виявлення хостів та служб.
+
+*Передача даних та віддалене керування*
+- [wget](./documents/network_commands/wget.md) / [curl](./documents/network_commands/curl.md) — завантаження файлів та даних з веб-ресурсів.
+- [ssh](./documents/network_commands/ssh.md) — безпечне підключення до віддаленого сервера.
+- [scp](./documents/network_commands/scp.md) — безпечне копіювання файлів між хостами.
+- [rsync](./documents/network_commands/rsync.md) — ефективна синхронізація файлів та директорій.
 
 ## 9. Системні утиліти
 
