@@ -101,6 +101,11 @@
 - [scp](./documents/network_commands/scp.md) — безпечне копіювання файлів між хостами.
 - [rsync](./documents/network_commands/rsync.md) — ефективна синхронізація файлів та директорій.
 
+*Безпека та шифрування*
+- [openssl](./documents/network_commands/openssl.md) — набір інструментів для роботи з SSL/TLS та криптографією.
+- [gpg](./documents/network_commands/gpg.md) — утиліта для шифрування та цифрового підпису (GNU Privacy Guard).
+- [ssh-keygen](./documents/network_commands/ssh-keygen.md) — генерація ключів для SSH-аутентифікації.
+
 ## 9. Системні утиліти
 
 - [shutdown / reboot](./documents/system_utilities/shutdown.md) — вимкнути або перезавантажити систему.
