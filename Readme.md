@@ -89,6 +89,7 @@
 - [dig](./documents/network_commands/dig.md) — інструмент для детальних DNS-запитів.
 
 *Діагностика та сканування мережі*
+- [Linux Network Troubleshooting](./documents/network_commands/linux_network_troubleshooting.md) — посібник з діагностики мережевих проблем.
 - [ping](./documents/network_commands/ping.md) — перевірка доступності вузла та вимірювання затримки.
 - [telnet](./documents/network_commands/telnet.md) — перевірка відкритості TCP-портів.
 - [nc](./documents/network_commands/nc.md) (netcat) — утиліта для роботи з TCP/UDP, сканування, передачі даних.
@@ -114,6 +115,7 @@
 - [man](./documents/system_utilities/man.md) (manual) — відкрити довідкову сторінку для команди.
 - [journalctl](./documents/system_utilities/journalctl.md) — переглянути логи системи (у systemd).
 - [crontab](./documents/system_utilities/crontab.md) — планувати автоматичне виконання завдань.
+- [tmux](./documents/system_utilities/tmux.md) — керування кількома термінальними сесіями в одному вікні.
 - [type](./documents/system_utilities/type.md) — відобразити інформацію про тип команди.
 - [xargs](./documents/system_utilities/xargs.md) — побудувати та виконати командні рядки зі стандартного вводу.
 
