@@ -2,9 +2,18 @@
 
 *{{ site.description }}*
 
+[tldr (Too long; didn't read) - ще один ресурс с людським обличчем](https://tldr.sh/)
+
 ---
 
-## 1. Робота з файлами та директоріями
+## 1. Теоретичні основи
+
+- [Права доступу та спеціальні атрибути](./documents/concepts/permissions_and_special_attributes.md) — огляд стандартних та спеціальних прав доступу.
+- [Ключові системні файли та директорії](./documents/concepts/key_files_and_directories.md) — огляд ключових файлів та директорій.
+- [Мережеві протоколи](./documents/concepts/network_protocols.md) — огляд протоколів моделі OSI.
+- [Linux Network Troubleshooting](./documents/concepts/linux_network_troubleshooting.md) — посібник з діагностики мережевих проблем.
+
+## 2. Робота з файлами та директоріями
 
 - [ls](./documents/file_and_directory_management/ls.md) (list) — вивести список файлів і директорій.
 - [cd](./documents/file_and_directory_management/cd.md) (change directory) — змінити поточну директорію.
@@ -16,7 +25,7 @@
 - [mv](./documents/file_and_directory_management/mv.md) (move) — перемістити або перейменувати файли та директорії.
 - [rm](./documents/file_and_directory_management/rm.md) (remove) — видалити файли або директорії.
 
-## 2. Перегляд та редагування файлів
+## 3. Перегляд та редагування файлів
 
 - [cat](./documents/file_viewing_and_editing/cat.md) (concatenate) — вивести вміст файлу на екран.
 - [less](./documents/file_viewing_and_editing/less.md) та [more](./documents/file_viewing_and_editing/more.md) — посторінково вивести вміст файлу.
@@ -29,13 +38,13 @@
 - [sort](./documents/file_viewing_and_editing/sort.md) — сортування рядків текстових файлів.
 - [uniq](./documents/file_viewing_and_editing/uniq.md) — виведення або пропуск повторюваних рядків.
 
-## 3. Пошук файлів та тексту
+## 4. Пошук файлів та тексту
 
 - [find](./documents/file_and_text_search/find.md) — знайти файли та директорії за різними критеріями.
 - [locate](./documents/file_and_text_search/locate.md) — швидкий пошук файлів за індексованою базою даних.
 - [grep](./documents/file_and_text_search/grep.md) (global regular expression print) — шукати текст всередині файлів.
 
-## 4. Управління користувачами та правами доступу
+## 5. Управління користувачами та правами доступу
 
 - [useradd / adduser](./documents/user_and_permission_management/useradd.md) — створити нового користувача.
 - [usermod](./documents/user_and_permission_management/usermod.md) — змінити параметри існуючого користувача.
@@ -48,7 +57,7 @@
 - [su](./documents/user_and_permission_management/su.md) (switch user) — переключитися на іншого користувача.
 - [sudo](./documents/user_and_permission_management/sudo.md) (superuser do) — виконати команду з правами адміністратора.
 
-## 5. Моніторинг процесів та системні ресурси
+## 6. Моніторинг процесів та системні ресурси
 
 - [ps](./documents/process_and_system_monitoring/ps.md) (process status) — показати список поточних процесів.
 - [top](./documents/process_and_system_monitoring/top.md) — динамічно відстежувати процеси та використання ресурсів.
@@ -59,7 +68,7 @@
 - [du](./documents/process_and_system_monitoring/du.md) (disk usage) — оцінити розмір директорії або файлу.
 - [free](./documents/process_and_system_monitoring/free.md) — показати обсяг вільної та використаної пам'яті.
 
-## 6. Управління пакетами
+## 7. Управління пакетами
 
 Для Debian/Ubuntu:
 - [apt / apt-get](./documents/package_management/apt.md) — керувати встановленням, оновленням та видаленням пакетів.
@@ -70,14 +79,14 @@
 - [dpkg](./documents/package_management/dpkg.md) — керувати пакетами в Debian-системах.
 - [rpm](./documents/package_management/rpm.md) — керувати пакетами в Red Hat-системах.
 
-## 7. Робота з архівами
+## 8. Робота з архівами
 
 - [tar](./documents/archive_management/tar.md) — створити або розпакувати архіви (.tar, .tar.gz, .tar.bz2).
 - [zip](./documents/archive_management/zip.md) та unzip — стиснути та розпакувати ZIP-архіви.
 - [gzip](./documents/archive_management/gzip.md) та gunzip — стиснути та розпакувати файли.
 - [bzip2](./documents/archive_management/bzip2.md) — стиснення файлів з використанням алгоритму сортування блоків.
 
-## 8. Мережеві команди
+## 9. Мережеві команди
 
 *Налаштування та моніторинг локальних інтерфейсів*
 - [ip](./documents/network_commands/ip.md) / ifconfig — показ та налаштування мережевих інтерфейсів.
@@ -89,7 +98,6 @@
 - [dig](./documents/network_commands/dig.md) — інструмент для детальних DNS-запитів.
 
 *Діагностика та сканування мережі*
-- [Linux Network Troubleshooting](./documents/network_commands/linux_network_troubleshooting.md) — посібник з діагностики мережевих проблем.
 - [ping](./documents/network_commands/ping.md) — перевірка доступності вузла та вимірювання затримки.
 - [telnet](./documents/network_commands/telnet.md) — перевірка відкритості TCP-портів.
 - [nc](./documents/network_commands/nc.md) (netcat) — утиліта для роботи з TCP/UDP, сканування, передачі даних.
@@ -107,7 +115,7 @@
 - [gpg](./documents/network_commands/gpg.md) — утиліта для шифрування та цифрового підпису (GNU Privacy Guard).
 - [ssh-keygen](./documents/network_commands/ssh-keygen.md) — генерація ключів для SSH-аутентифікації.
 
-## 9. Системні утиліти
+## 10. Системні утиліти
 
 - [shutdown / reboot](./documents/system_utilities/shutdown.md) — вимкнути або перезавантажити систему.
 - [date](./documents/system_utilities/date.md) — показати або встановити системну дату та час.
@@ -118,30 +126,3 @@
 - [tmux](./documents/system_utilities/tmux.md) — керування кількома термінальними сесіями в одному вікні.
 - [type](./documents/system_utilities/type.md) — відобразити інформацію про тип команди.
 - [xargs](./documents/system_utilities/xargs.md) — побудувати та виконати командні рядки зі стандартного вводу.
-
-## 10. Ключові системні файли та директорії
-
-*Конфігураційні файли користувачів*
-- **/etc/passwd**: Інформація про користувачів (без паролів).
-- **/etc/shadow**: Хешовані паролі користувачів.
-- **/etc/group**: Інформація про групи користувачів.
-- **/etc/sudoers**: Налаштування доступу до команди sudo. Редагувати тільки через visudo!
-
-*Системні конфігурації*
-- **/etc/fstab**: Налаштування автоматичного монтування файлових систем.
-- **/etc/hostname**: Ім'я хоста.
-- **/etc/hosts**: Статичні відповідності IP-адрес та імен хостів.
-- **/etc/resolv.conf**: IP-адреси DNS-серверів.
-- **/etc/network/interfaces**: Налаштування мережевих інтерфейсів (для Debian/Ubuntu).
-- **/etc/ssh/sshd_config**: Конфігураційний файл SSH-сервера.
-
-*Журнали (логи)*
-- **/var/log/**: Основна директорія для зберігання системних журналів.
-- **/var/log/syslog** або **/var/log/messages**: Загальносистемні логи.
-- **/var/log/auth.log** або **/var/log/secure**: Логи авторизації та безпеки.
-- **/var/log/dmesg**: Повідомлення ядра системи.
-
-*Інші важливі директорії*
-- **/boot**: Файли для завантаження системи.
-- **/home**: Домашні директорії користувачів.
-- **/root**: Домашня директорія користувача root.
