@@ -13,6 +13,12 @@
 - [Мережеві протоколи](./documents/concepts/network_protocols.md) — огляд протоколів моделі OSI.
 - [Linux Network Troubleshooting](./documents/concepts/linux_network_troubleshooting.md) — посібник з діагностики мережевих проблем.
 
+### Performance troubleshooting
+
+- [Діагностика продуктивності: CPU](./documents/concepts/Performance_troubleshooting/CPU%20Troubleshooting_uk.md) — аналіз та вирішення проблем з високим навантаженням на процесор.
+- [Діагностика продуктивності: Memory](./documents/concepts/Performance_troubleshooting/Memory%20Troubleshooting_uk.md) — посібник з виявлення та усунення проблем з пам'яттю.
+- [Діагностика продуктивності: HDD](./documents/concepts/Performance_troubleshooting/HDD_Troubleshooting_uk.md) — методи діагностики та вирішення проблем з продуктивністю жорсткого диска.
+
 ## 2. Робота з файлами та директоріями
 
 - [ls](./documents/file_and_directory_management/ls.md) (list) — вивести список файлів і директорій.
