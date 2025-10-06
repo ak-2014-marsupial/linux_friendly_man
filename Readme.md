@@ -2,7 +2,7 @@
 
 *{{ site.description }}*
 
-[tldr (Too long; didn't read) - ще один ресурс с людським обличчем](https://tldr.sh/)
+[tldr (Too long; didn't read) - ще один ресурс с людським обличчям](https://tldr.sh/)
 
 ---
 
@@ -13,12 +13,14 @@
 - [Мережеві протоколи](./documents/concepts/network_protocols.md) — огляд протоколів моделі OSI.
 - [Linux Network Troubleshooting](./documents/concepts/linux_network_troubleshooting.md) — посібник з діагностики мережевих проблем.
 - [Курс "Linux и Администрирование" (на русском языке)](./documents/LinuxAndAdministration/Readme.md) — повний курс з адміністрування Linux.
+- [Кніги по Linux від linux-training.be (на англійскій)](https://linux-training.be/index.php?nav=home) - дуже якісний матеріал. 
 
 ### Performance troubleshooting
 
 - [Діагностика продуктивності: CPU](./documents/concepts/Performance_troubleshooting/CPU%20Troubleshooting_uk.md) — аналіз та вирішення проблем з високим навантаженням на процесор.
 - [Діагностика продуктивності: Memory](./documents/concepts/Performance_troubleshooting/Memory%20Troubleshooting_uk.md) — посібник з виявлення та усунення проблем з пам'яттю.
 - [Діагностика продуктивності: HDD](./documents/concepts/Performance_troubleshooting/HDD_Troubleshooting_uk.md) — методи діагностики та вирішення проблем з продуктивністю жорсткого диска.
+- [Методологія Аналізу Швидкодії Систем](./documents/concepts/Performance_troubleshooting/System_Performance_Analysis_Methodology_uk.md) — покроковий посібник з діагностики проблем продуктивності з використанням методів RED та USE.
 
 ## 2. Робота з файлами та директоріями
 
@@ -69,11 +71,18 @@
 - [ps](./documents/process_and_system_monitoring/ps.md) (process status) — показати список поточних процесів.
 - [top](./documents/process_and_system_monitoring/top.md) — динамічно відстежувати процеси та використання ресурсів.
 - [htop](./documents/process_and_system_monitoring/htop.md) — покращена, інтерактивна версія top.
+- [iostat](./documents/process_and_system_monitoring/iostat.md) — моніторинг використання CPU та статистики вводу/виводу.
+- [iotop](./documents/process_and_system_monitoring/iotop.md) — інтерактивний моніторинг дискового I/O по процесах.
 - [kill](./documents/process_and_system_monitoring/kill.md) — завершити процес за його ID (PID).
 - [pkill](./documents/process_and_system_monitoring/pkill.md) — завершити процес за його іменем.
+- [pidstat](./documents/process_and_system_monitoring/pidstat.md) — моніторинг статистики для окремих процесів.
 - [df](./documents/process_and_system_monitoring/df.md) (disk free) — показати використання дискового простору.
 - [du](./documents/process_and_system_monitoring/du.md) (disk usage) — оцінити розмір директорії або файлу.
 - [free](./documents/process_and_system_monitoring/free.md) — показати обсяг вільної та використаної пам'яті.
+- [lsof](./documents/process_and_system_monitoring/lsof.md) — показати список файлів, відкритих процесами.
+- [mpstat](./documents/process_and_system_monitoring/mpstat.md) — моніторинг використання CPU по кожному ядру.
+- [sar](./documents/process_and_system_monitoring/sar.md) — зібрати, повідомити або зберегти інформацію про системну активність.
+- [vmstat](./documents/process_and_system_monitoring/vmstat.md) — відстежувати віртуальну пам'ять, процеси та активність CPU.
 
 ## 7. Управління пакетами
 
@@ -96,8 +105,9 @@
 ## 9. Мережеві команди
 
 *Налаштування та моніторинг локальних інтерфейсів*
-- [ip](./documents/network_commands/ip.md) / ifconfig — показ та налаштування мережевих інтерфейсів.
-- [netstat](./documents/network_commands/netstat.md) / ss — аналіз активних з'єднань та відкритих портів.
+- [ip](./documents/network_commands/ip.md) — налаштування IP-адрес, інтерфейсів та маршрутизації (заміна `ifconfig`).
+- [netstat](./documents/network_commands/netstat.md) — аналіз активних з'єднань та відкритих портів (застаріла).
+- [ss](./documents/network_commands/ss.md) — аналіз сокетів (сучасна заміна для netstat).
 
 *Робота з DNS*
 - [host](./documents/network_commands/host.md) — проста утиліта для DNS-запитів.
@@ -110,6 +120,8 @@
 - [nc](./documents/network_commands/nc.md) (netcat) — утиліта для роботи з TCP/UDP, сканування, передачі даних.
 - [traceroute](./documents/network_commands/traceroute.md) — відстеження маршруту пакетів до вузла.
 - [nmap](./documents/network_commands/nmap.md) — сканер мереж для виявлення хостів та служб.
+- [iftop](./documents/network_commands/iftop.md) — інтерактивний моніторинг мережевого трафіку.
+- [nethogs](./documents/network_commands/nethogs.md) — моніторинг мережевого трафіку по процесах.
 
 *Передача даних та віддалене керування*
 - [wget](./documents/network_commands/wget.md) / [curl](./documents/network_commands/curl.md) — завантаження файлів та даних з веб-ресурсів.

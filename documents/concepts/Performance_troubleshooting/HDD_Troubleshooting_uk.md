@@ -8,7 +8,7 @@
 
 Коли я вперше входжу на сервер, я запускаю команду top, щоб зрозуміти загальне навантаження на сервер та можливі причини перевантаження.
 
-![top_hdd.png](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguq_ZRO_Q_zvLTgXtbWhwQP9nRZs4pR8ebiEazjk67qFIEr0oOytU-NcaYUwn6gyh9_UghoavtXmSZo0-PruO7ITxdnz0wZAQ18AQdT9lxpzHbpvfSXX01IqATBcO7vX2uB7Gzwvd3yRc/s1600/top_hdd.png)
+![top_hdd.png](media/top_hdd.png)
 
 З цієї картинки ми бачимо, що:
 
@@ -23,7 +23,7 @@
 
 де **d** - звіт про використання пристрою, **x -** відображення розширеної статистики, **/dev/sda -** мій жорсткий диск, **1** - кількість часу в секундах між кожним звітом. Перший рядок, згенерований командою iostat (і vmstat теж), надає статистику за час з моменту завантаження системи. Тому зазвичай його слід ігнорувати.
 
-![iostat.png](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht31ITbRIHhFrKVGWCxqPP7PeH383CCDOY1Yqpm-WA6NvYR47bDXx8fJHVJme7-WIU5Ytxbm7gZTneKoq1aO6m2RoFuUBAowTAmgd0U9BsGNk3-Irsv2biJB51Ipt4khe2PH6eGevovCM/s1600/iostat.png)
+![iostat.png](media/iostat.png)
 
 Стовпці, які нас цікавлять:
 
@@ -44,7 +44,7 @@
 `$ htop -->F2-->вибрати 'Columns' у стовпці Setup --> Available Columns --> є 3 стовпці, пов'язані з вводом/виводом: IO_READ_RATE, IO_WRITE_RATE, IO_RATE(IO_WRITE_RATE + IO_READ_RATE), ви можете додати їх усі або лише 1 з них (наприклад, IO_RATE), натиснувши кнопку F5 (вони з'являться в Active_Columns)--> натисніть F10, щоб завершити.`
 Ми бачимо, що потрібні стовпці є у виводі **htop**. Наступний крок - відсортувати процеси за потрібним значенням, у нашому випадку це IO_RATE: F6-->IO --> Enter. Ось і все: ми бачимо процес, що споживає найбільше вводу/виводу, у верхній частині виводу:
 
-![htop.png](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbHjp8_wW-ebJR47VXCeBd6ieljtHUBh3z3fv9LR59Y7j8wSAqzh4StP9_WWfbLX8qWOhB39MnmYvroYbDGHS8NeC7EeGpLfHPBzmjEf2YdBbi4JmZgG8nN41V4ChqhVDuYjeu0cHXmJ8/s1600/htop.png)
+![htop.png](media/htop.png)
 
 У моєму випадку це kio_ftp, і це правильно, я завантажував файли з ftp-сервера. Також ми бачимо, що були лише запити на запис вводу/виводу та 0 читань.
 Таким же чином ви можете сортувати програми за швидкістю ЧИТАННЯ та ЗАПИСУ.
@@ -56,11 +56,11 @@
 Але я віддаю перевагу запуску з опцією -o (Показувати лише процеси або потоки, які фактично виконують ввід/вивід, замість того, щоб показувати всі процеси або потоки.)
 `$ iotop -o`
 
-![iotop.png](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg7gS_mbh0jbwSjyajIw7IrYrCe2aD6rhWyKFsLQe3TFh55Tptmh5TSgmT9UHBdI47pLikeQRWiHq6Ppff3CxNMsVNOQ1EPPZK3XYW3g4VdkvuaEYdUbV2xSN-7kl2XU_fVs5juGQP48A/s1600/iotop.png)
+![iotop.png](media/iotop.png)
 
 Ми бачимо, що в той самий момент 3 процеси активно використовували диск, jbd2 - процес журналювання для ext4. **dm-6-8 -** dm - device multipath (використовується в [LVM](http://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)) (Logical Volume Manager) у моєму випадку), 6 - номер пристрою. Вивід **lsblk** може допомогти зрозуміти, який пристрій зараз завантажений:
 
-![lsblk.png](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYzdaPuG8Yoefe2RrH-zx20Zo6b6kdBwaRT5aN6SAjvdZ1OmTl-V9H1_UGA5QKM-nmjH71bD7mIesgi7D2I3BLeGSfP2_DE3DbvDqsjkg-htKuNFwqpqdcEsbw_z8cermxeWmqYKWIaoI/s1600/lsblk.png)
+![lsblk.png](media/lsblk.png)
 
 З картинки зрозуміло, що dm-6 - це том LVM 'system-data', який змонтований у /data. І саме в папку /data/ я копіював файли в той момент.
 
@@ -68,12 +68,12 @@
 
 **dstat - **універсальний інструмент для генерації статистики системних ресурсів. Цей інструмент може показати вам усе! :). Але ми зосередимося лише на статистиці вводу/виводу:
 
-![dstat.png](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg23oGbeqrgYjsBkpq44p6u_6LI1JxNQ1TYr7L6s6-Ew_lLchY3mwg-xtikNHFeGReFYzu_pTnz3ZUWTNaJRyQds3UjRYTNYJVCyZcBHD1ovFJHqDtYluT7qyMCz8OuzVBcaBPdGvLiw8Q/s1600/dstat.png)
+![dstat.png](media/dstat.png)
 
 Ми бачимо, що більшу частину часу процес, що споживає найбільше вводу/виводу, був kdeinit: kio_ftp.
 Що відрізняє dstat від інших інструментів моніторингу, так це те, що ви можете поєднувати кілька статистик в одному виводі, наприклад, наступний вивід покаже статистику вводу/виводу + статистику мережі + статистику процесора!
 
-![dstat1.png](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIWUeUrNAEZgiWnATxAbHwVRTR62lRbdUkVAixB10TiheFW21xL88oIMv4WRyvMEaKZkXEHiLu2aO1ZbrgtLSGRgUqkpLvyZeTHVHo8JTXFUr7pGFQ2ZrLnL-KMh_BLgub4FOt5LvNR1U/s1600/dstat1.png)
+![dstat1.png](media/dstat1.png)
 
 Круто, га? І комбінація виводу обмежена лише вашою уявою :). Наприклад:
 **> dstat --top-io --bw -n -c -m -p -l,** додасть інформацію про використання пам'яті, процеси та середнє навантаження.

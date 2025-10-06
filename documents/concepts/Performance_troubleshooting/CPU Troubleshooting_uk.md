@@ -17,7 +17,7 @@
 
 Я думаю, що це найвідоміший інструмент системного узагальнення в Linux, і кожен адміністратор або інженер повинен його дуже добре розуміти. **top** - це інтерактивна програма, яка показує різні статистичні дані Linux. Ось звичайний вивід top:
 
-![top1.png](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6JEf8p7hT8Q9w1Ug74iz8Jk2g1nT8nouq2vAHoYt_jeYtPOX8A726vVEMA09MT9GhQUH_fF7mBRagDQppaETFABaiqO8hWlze3gm2kaVkZy761h0PBqvaSNgBhoxAHEczoYoHGF7xobk/s1600/top1.png)
+![top1.png](media/top1.png)
 
 Перший показник, на який ми повинні звернути увагу, це '**id**' (idle). Це означає час простою. Чим ближче це значення до 100%, тим більше вільних ресурсів процесора має ваша система. Це відсоток часу, протягом якого ваш процесор вільний. І якщо це значення близьке до '0' - ваша система безперечно страждає від нестачі ресурсів процесора.
 
@@ -71,13 +71,13 @@ _Середнє навантаження системи - це середня к
 
 Попередня команда показує статистику процесора кожні 5 секунд.
 
-![mpstat.png](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkDvZq46aQVLYNP9HmOiV8vV7SG-8np-FpaGlkyg34uGGaLu2Qr7tHcfA4gCwh5POLKveXQXJsQoc3rGWBiK9c0aPTwvCiQ9JXp0DgI7308EasQLxg68-TrmqNoFCrSWAXxpeUqq0vm00/s1600/mpstat.png)
+![mpstat.png](media/mpstat.png)
 
 *   **vmstat**
 
 Це мій улюблений інструмент. Він показує статистику процесора, пам'яті, вводу/виводу в дуже зручному вигляді:
 
-![vmstat.png](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbZRJ01_TApGiWec9p4S3pBq4lumSBRwyu63w1LvfZ7PvGz7pDjEF7oKer9aV3J8Ownwr92gVO4FL7uqykxkhKWzHZgLd24dEK6Eia_SFKWTFo3upFIdSr5upQsXGNI9kyH7vrox_IFi4/s1600/vmstat.png)
+![vmstat.png](media/vmstat.png)
 
 Тут вам слід звернути увагу на стовпці **procs, system** та **cpu.**
 Стовпець **cpu** не показує для нас жодної нової інформації. Але є новий показник '**cs**' (context switches) - кількість перемикань контексту в секунду між процесами. Якщо це значення занадто велике, це означає, що у вас багато програм, які потребують процесорного часу. Інші цікаві показники знаходяться в стовпці **procs**: **r** та **b.**
@@ -90,7 +90,7 @@ _Середнє навантаження системи - це середня к
 
 Ще одна утиліта, про яку я хотів би розповісти, це **pidstat.** Цей інструмент дуже зручний, коли вам потрібно відстежувати поведінку однієї програми:
 
-![pidstat.png](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhh8Mt2P0vgU-W99v_hZ1EILUNFK_OQj6LjeSEt8kmkiEbgNTL_qojPwTz_laWCiUReDH89XH9QdQiaNKdrb1vIjoq7ZTNQDFSmmE65kYqrzEGfuUcO9wMD1c3Ph4waLEQsGM8JedMlnsg/s1600/pidstat.png)
+![pidstat.png](media/pidstat.png)
 
 Цей інструмент не був би таким цікавим без можливості відстежувати навантаження потоків у багатопотокових програмах:
 
