@@ -84,7 +84,15 @@
 - [sar](./documents/process_and_system_monitoring/sar.md) — зібрати, повідомити або зберегти інформацію про системну активність.
 - [vmstat](./documents/process_and_system_monitoring/vmstat.md) — відстежувати віртуальну пам'ять, процеси та активність CPU.
 
-## 7. Управління пакетами
+## 7. Управління дисками та файловими системами
+
+- [lsblk](./documents/disk_and_filesystem_management/lsblk.md) — вивести список блокових пристроїв.
+- [fdisk](./documents/disk_and_filesystem_management/fdisk.md) — маніпулювати таблицею розділів диска.
+- [mkfs](./documents/disk_and_filesystem_management/mkfs.md) — створити файлову систему Linux.
+- [mount](./documents/disk_and_filesystem_management/mount.md) — змонтувати файлову систему.
+- [blkid](./documents/disk_and_filesystem_management/blkid.md) — знайти та роздрукувати атрибути блокових пристроїв.
+
+## 8. Управління пакетами
 
 Для Debian/Ubuntu:
 - [apt / apt-get](./documents/package_management/apt.md) — керувати встановленням, оновленням та видаленням пакетів.
@@ -95,14 +103,14 @@
 - [dpkg](./documents/package_management/dpkg.md) — керувати пакетами в Debian-системах.
 - [rpm](./documents/package_management/rpm.md) — керувати пакетами в Red Hat-системах.
 
-## 8. Робота з архівами
+## 9. Робота з архівами
 
 - [tar](./documents/archive_management/tar.md) — створити або розпакувати архіви (.tar, .tar.gz, .tar.bz2).
 - [zip](./documents/archive_management/zip.md) та unzip — стиснути та розпакувати ZIP-архіви.
 - [gzip](./documents/archive_management/gzip.md) та gunzip — стиснути та розпакувати файли.
 - [bzip2](./documents/archive_management/bzip2.md) — стиснення файлів з використанням алгоритму сортування блоків.
 
-## 9. Мережеві команди
+## 10. Мережеві команди
 
 *Налаштування та моніторинг локальних інтерфейсів*
 - [ip](./documents/network_commands/ip.md) — налаштування IP-адрес, інтерфейсів та маршрутизації (заміна `ifconfig`).
@@ -134,7 +142,7 @@
 - [gpg](./documents/network_commands/gpg.md) — утиліта для шифрування та цифрового підпису (GNU Privacy Guard).
 - [ssh-keygen](./documents/network_commands/ssh-keygen.md) — генерація ключів для SSH-аутентифікації.
 
-## 10. Системні утиліти
+## 11. Системні утиліти
 
 - [shutdown / reboot](./documents/system_utilities/shutdown.md) — вимкнути або перезавантажити систему.
 - [date](./documents/system_utilities/date.md) — показати або встановити системну дату та час.
