@@ -69,6 +69,7 @@
 ## 6. Моніторинг процесів та системні ресурси
 
 - [ps](./documents/process_and_system_monitoring/ps.md) (process status) — показати список поточних процесів.
+- [pstree](./documents/process_and_system_monitoring/pstree.md) (process status tree) — візуалізувати процеси у вигляді дерева.
 - [top](./documents/process_and_system_monitoring/top.md) — динамічно відстежувати процеси та використання ресурсів.
 - [htop](./documents/process_and_system_monitoring/htop.md) — покращена, інтерактивна версія top.
 - [iostat](./documents/process_and_system_monitoring/iostat.md) — моніторинг використання CPU та статистики вводу/виводу.
@@ -79,6 +80,7 @@
 - [df](./documents/process_and_system_monitoring/df.md) (disk free) — показати використання дискового простору.
 - [du](./documents/process_and_system_monitoring/du.md) (disk usage) — оцінити розмір директорії або файлу.
 - [free](./documents/process_and_system_monitoring/free.md) — показати обсяг вільної та використаної пам'яті.
+- [fuser](./documents/process_and_system_monitoring/fuser.md) (File USER) — ідентифікувати процеси, що використовують файли або сокети.
 - [lsof](./documents/process_and_system_monitoring/lsof.md) — показати список файлів, відкритих процесами.
 - [mpstat](./documents/process_and_system_monitoring/mpstat.md) — моніторинг використання CPU по кожному ядру.
 - [sar](./documents/process_and_system_monitoring/sar.md) — зібрати, повідомити або зберегти інформацію про системну активність.
