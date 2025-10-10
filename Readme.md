@@ -22,6 +22,9 @@
 - [Діагностика продуктивності: HDD](./documents/concepts/Performance_troubleshooting/HDD_Troubleshooting_uk.md) — методи діагностики та вирішення проблем з продуктивністю жорсткого диска.
 - [Методологія Аналізу Швидкодії Систем](./documents/concepts/Performance_troubleshooting/System_Performance_Analysis_Methodology_uk.md) — покроковий посібник з діагностики проблем продуктивності з використанням методів RED та USE.
 - [Аналіз виводу vmstat: Поля та їх значення](./documents/process_and_system_monitoring/vmstat_fields.md) — детальний розбір полів команди vmstat та їх вплив на продуктивність.
+- [Аналіз виводу iostat: Поля та їх значення](./documents/process_and_system_monitoring/iostat_fields.md) — детальний розбір полів команди iostat для діагностики продуктивності дисків.
+- [Аналіз виводу top: Поля та їх значення](./documents/process_and_system_monitoring/top_fields.md) — детальний розбір полів команди top для моніторингу в реальному часі.
+- [Аналіз виводу ss: Стани та черги сокетів](./documents/network_commands/ss_fields.md) — детальний розбір виводу команди ss для діагностики мережевих з'єднань.
 
 ## 2. Робота з файлами та директоріями
 
