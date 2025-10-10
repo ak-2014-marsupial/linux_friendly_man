@@ -66,29 +66,32 @@
 - [su](./documents/user_and_permission_management/su.md) (switch user) — переключитися на іншого користувача.
 - [sudo](./documents/user_and_permission_management/sudo.md) (superuser do) — виконати команду з правами адміністратора.
 
-## 6. Моніторинг процесів та системні ресурси
+## 6. Моніторинг та управління процесами
 
 - [ps](./documents/process_and_system_monitoring/ps.md) (process status) — показати список поточних процесів.
 - [pstree](./documents/process_and_system_monitoring/pstree.md) (process status tree) — візуалізувати процеси у вигляді дерева.
 - [top](./documents/process_and_system_monitoring/top.md) (table of processes) — динамічно відстежувати процеси та використання ресурсів.
 - [htop](./documents/process_and_system_monitoring/htop.md) (Hisham's top) — покращена, інтерактивна версія top.
-- [iostat](./documents/process_and_system_monitoring/iostat.md) (input/output statistics) — моніторинг використання CPU та статистики вводу/виводу.
-- [iotop](./documents/process_and_system_monitoring/iotop.md) (I/O top) — інтерактивний моніторинг дискового I/O по процесах.
 - [kill](./documents/process_and_system_monitoring/kill.md) — завершити процес за його ID (PID).
 - [pkill](./documents/process_and_system_monitoring/pkill.md) (process kill) — завершити процес за його іменем.
 - [pidstat](./documents/process_and_system_monitoring/pidstat.md) (process ID statistics) — моніторинг статистики для окремих процесів.
+- [fuser](./documents/process_and_system_monitoring/fuser.md) (File USER) — ідентифікувати процеси, що використовують файли або сокети.
+- [lsof](./documents/process_and_system_monitoring/lsof.md) (list open files) — показати список файлів, відкритих процесами.
+- [strace](./documents/process_and_system_monitoring/strace.md) (system call trace) — трасування системних викликів і сигналів.
+
+## 7. Моніторинг системних ресурсів
+
 - [df](./documents/process_and_system_monitoring/df.md) (disk free) — показати використання дискового простору.
 - [du](./documents/process_and_system_monitoring/du.md) (disk usage) — оцінити розмір директорії або файлу.
 - [free](./documents/process_and_system_monitoring/free.md) — показати обсяг вільної та використаної пам'яті.
-- [fuser](./documents/process_and_system_monitoring/fuser.md) (File USER) — ідентифікувати процеси, що використовують файли або сокети.
-- [lsof](./documents/process_and_system_monitoring/lsof.md) (list open files) — показати список файлів, відкритих процесами.
+- [iostat](./documents/process_and_system_monitoring/iostat.md) (input/output statistics) — моніторинг використання CPU та статистики вводу/виводу.
+- [iotop](./documents/process_and_system_monitoring/iotop.md) (I/O top) — інтерактивний моніторинг дискового I/O по процесах.
 - [mpstat](./documents/process_and_system_monitoring/mpstat.md) (multi-processor statistics) — моніторинг використання CPU по кожному ядру.
 - [sar](./documents/process_and_system_monitoring/sar.md) (system activity reporter) — зібрати, повідомити або зберегти інформацію про системну активність.
 - [vmstat](./documents/process_and_system_monitoring/vmstat.md) (virtual memory statistics) — відстежувати віртуальну пам'ять, процеси та активність CPU.
 - [cpustat](./documents/process_and_system_monitoring/cpustat.md) (CPU statistics) — моніторинг використання CPU окремими процесами.
-- [strace](./documents/process_and_system_monitoring/strace.md) (system call trace) — трасування системних викликів і сигналів.
 
-## 7. Управління дисками та файловими системами
+## 8. Управління дисками та файловими системами
 
 - [lsblk](./documents/disk_and_filesystem_management/lsblk.md) (list block devices) — вивести список блокових пристроїв.
 - [fdisk](./documents/disk_and_filesystem_management/fdisk.md) (fixed disk) — маніпулювати таблицею розділів диска.
@@ -96,7 +99,7 @@
 - [mount](./documents/disk_and_filesystem_management/mount.md) — змонтувати файлову систему.
 - [blkid](./documents/disk_and_filesystem_management/blkid.md) (block ID) — знайти та роздрукувати атрибути блокових пристроїв.
 
-## 8. Управління пакетами
+## 9. Управління пакетами
 
 Для Debian/Ubuntu:
 - [apt / apt-get](./documents/package_management/apt.md) (Advanced Package Tool) — керувати встановленням, оновленням та видаленням пакетів.
@@ -107,14 +110,14 @@
 - [dpkg](./documents/package_management/dpkg.md) (Debian package) — керувати пакетами в Debian-системах.
 - [rpm](./documents/package_management/rpm.md) (RPM Package Manager) — керувати пакетами в Red Hat-системах.
 
-## 9. Робота з архівами
+## 10. Робота з архівами
 
 - [tar](./documents/archive_management/tar.md) (tape archive) — створити або розпакувати архіви (.tar, .tar.gz, .tar.bz2).
 - [zip](./documents/archive_management/zip.md) та unzip — стиснути та розпакувати ZIP-архіви.
 - [gzip](./documents/archive_management/gzip.md) (GNU zip) та gunzip — стиснути та розпакувати файли.
 - [bzip2](./documents/archive_management/bzip2.md) — стиснення файлів з використанням алгоритму сортування блоків.
 
-## 10. Мережеві команди
+## 11. Мережеві команди
 
 *Налаштування та моніторинг локальних інтерфейсів*
 - [ip](./documents/network_commands/ip.md) — налаштування IP-адрес, інтерфейсів та маршрутизації (заміна `ifconfig`).
@@ -147,17 +150,20 @@
 - [gpg](./documents/network_commands/gpg.md) (GNU Privacy Guard) — утиліта для шифрування та цифрового підпису.
 - [ssh-keygen](./documents/network_commands/ssh-keygen.md) (secure shell key generation) — генерація ключів для SSH-аутентифікації.
 
-## 11. Системні утиліти
+## 12. Інформація про систему та обладнання
 
-- [shutdown / reboot](./documents/system_utilities/shutdown.md) — вимкнути або перезавантажити систему.
 - [date](./documents/system_utilities/date.md) — показати або встановити системну дату та час.
 - [dmidecode](./documents/system_utilities/dmidecode.md) (DMI decode) — вивести інформацію про апаратне забезпечення.
+- [lshw](./documents/system_utilities/lshw.md) (list hardware) — вивести інформацію про апаратне забезпечення.
+- [lspci](./documents/system_utilities/lspci.md) (list PCI) — вивести інформацію про PCI-пристрої.
+- [lsusb](./documents/system_utilities/lsusb.md) (list USB) — вивести інформацію про USB-пристрої.
+
+## 13. Системні утиліти
+
+- [shutdown / reboot](./documents/system_utilities/shutdown.md) — вимкнути або перезавантажити систему.
 - [history](./documents/system_utilities/history.md) — показати список раніше виконаних команд.
 - [man](./documents/system_utilities/man.md) (manual) — відкрити довідкову сторінку для команди.
 - [journalctl](./documents/system_utilities/journalctl.md) (journal control) — переглянути логи системи (у systemd).
-- [lspci](./documents/system_utilities/lspci.md) (list PCI) — вивести інформацію про PCI-пристрої.
-- [lsusb](./documents/system_utilities/lsusb.md) (list USB) — вивести інформацію про USB-пристрої.
-- [lshw](./documents/system_utilities/lshw.md) (list hardware) — вивести інформацію про апаратне забезпечення.
 - [crontab](./documents/system_utilities/crontab.md) (cron table) — планувати автоматичне виконання завдань.
 - [tmux](./documents/system_utilities/tmux.md) (terminal multiplexer) — керування кількома термінальними сесіями в одному вікні.
 - [type](./documents/system_utilities/type.md) — відобразити інформацію про тип команди.
