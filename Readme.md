@@ -40,12 +40,12 @@
 - [less](./documents/file_viewing_and_editing/less.md) та [more](./documents/file_viewing_and_editing/more.md) — посторінково вивести вміст файлу.
 - [head](./documents/file_viewing_and_editing/head.md) — показати перші рядки файлу.
 - [tail](./documents/file_viewing_and_editing/tail.md) — показати останні рядки файлу.
-- [nano](./documents/file_viewing_and_editing/nano.md) — простий текстовий редактор у терміналі.
-- [vi/vim](./documents/file_viewing_and_editing/vi.md) — потужний, але складніший текстовий редактор.
-- [awk](./documents/file_viewing_and_editing/awk.md) — мова для сканування та обробки тексту.
-- [sed](./documents/file_viewing_and_editing/sed.md) — потоковий редактор для фільтрації та перетворення тексту.
+- [nano](./documents/file_viewing_and_editing/nano.md) (Nano's ANOther editor) — простий текстовий редактор у терміналі.
+- [vi/vim](./documents/file_viewing_and_editing/vi.md) (visual / Vi IMproved) — потужний, але складніший текстовий редактор.
+- [awk](./documents/file_viewing_and_editing/awk.md) (Aho, Weinberger, Kernighan) — мова для сканування та обробки тексту.
+- [sed](./documents/file_viewing_and_editing/sed.md) (stream editor) — потоковий редактор для фільтрації та перетворення тексту.
 - [sort](./documents/file_viewing_and_editing/sort.md) — сортування рядків текстових файлів.
-- [uniq](./documents/file_viewing_and_editing/uniq.md) — виведення або пропуск повторюваних рядків.
+- [uniq](./documents/file_viewing_and_editing/uniq.md) (unique) — виведення або пропуск повторюваних рядків.
 
 ## 4. Пошук файлів та тексту
 
@@ -56,10 +56,10 @@
 ## 5. Управління користувачами та правами доступу
 
 - [useradd / adduser](./documents/user_and_permission_management/useradd.md) — створити нового користувача.
-- [usermod](./documents/user_and_permission_management/usermod.md) — змінити параметри існуючого користувача.
-- [userdel](./documents/user_and_permission_management/userdel.md) — видалити користувача.
+- [usermod](./documents/user_and_permission_management/usermod.md) (user modify) — змінити параметри існуючого користувача.
+- [userdel](./documents/user_and_permission_management/userdel.md) (user delete) — видалити користувача.
 - [groupadd](./documents/user_and_permission_management/groupadd.md) — створити нову групу.
-- [passwd](./documents/user_and_permission_management/passwd.md) — змінити пароль користувача.
+- [passwd](./documents/user_and_permission_management/passwd.md) (password) — змінити пароль користувача.
 - [chmod](./documents/user_and_permission_management/chmod.md) (change mode) — змінити права доступу до файлів.
 - [chown](./documents/user_and_permission_management/chown.md) (change owner) — змінити власника файлу/директорії.
 - [chgrp](./documents/user_and_permission_management/chgrp.md) (change group) — змінити групу, до якої належить файл.
@@ -70,88 +70,95 @@
 
 - [ps](./documents/process_and_system_monitoring/ps.md) (process status) — показати список поточних процесів.
 - [pstree](./documents/process_and_system_monitoring/pstree.md) (process status tree) — візуалізувати процеси у вигляді дерева.
-- [top](./documents/process_and_system_monitoring/top.md) — динамічно відстежувати процеси та використання ресурсів.
-- [htop](./documents/process_and_system_monitoring/htop.md) — покращена, інтерактивна версія top.
-- [iostat](./documents/process_and_system_monitoring/iostat.md) — моніторинг використання CPU та статистики вводу/виводу.
-- [iotop](./documents/process_and_system_monitoring/iotop.md) — інтерактивний моніторинг дискового I/O по процесах.
+- [top](./documents/process_and_system_monitoring/top.md) (table of processes) — динамічно відстежувати процеси та використання ресурсів.
+- [htop](./documents/process_and_system_monitoring/htop.md) (Hisham's top) — покращена, інтерактивна версія top.
+- [iostat](./documents/process_and_system_monitoring/iostat.md) (input/output statistics) — моніторинг використання CPU та статистики вводу/виводу.
+- [iotop](./documents/process_and_system_monitoring/iotop.md) (I/O top) — інтерактивний моніторинг дискового I/O по процесах.
 - [kill](./documents/process_and_system_monitoring/kill.md) — завершити процес за його ID (PID).
-- [pkill](./documents/process_and_system_monitoring/pkill.md) — завершити процес за його іменем.
-- [pidstat](./documents/process_and_system_monitoring/pidstat.md) — моніторинг статистики для окремих процесів.
+- [pkill](./documents/process_and_system_monitoring/pkill.md) (process kill) — завершити процес за його іменем.
+- [pidstat](./documents/process_and_system_monitoring/pidstat.md) (process ID statistics) — моніторинг статистики для окремих процесів.
 - [df](./documents/process_and_system_monitoring/df.md) (disk free) — показати використання дискового простору.
 - [du](./documents/process_and_system_monitoring/du.md) (disk usage) — оцінити розмір директорії або файлу.
 - [free](./documents/process_and_system_monitoring/free.md) — показати обсяг вільної та використаної пам'яті.
 - [fuser](./documents/process_and_system_monitoring/fuser.md) (File USER) — ідентифікувати процеси, що використовують файли або сокети.
-- [lsof](./documents/process_and_system_monitoring/lsof.md) — показати список файлів, відкритих процесами.
-- [mpstat](./documents/process_and_system_monitoring/mpstat.md) — моніторинг використання CPU по кожному ядру.
-- [sar](./documents/process_and_system_monitoring/sar.md) — зібрати, повідомити або зберегти інформацію про системну активність.
-- [vmstat](./documents/process_and_system_monitoring/vmstat.md) — відстежувати віртуальну пам'ять, процеси та активність CPU.
+- [lsof](./documents/process_and_system_monitoring/lsof.md) (list open files) — показати список файлів, відкритих процесами.
+- [mpstat](./documents/process_and_system_monitoring/mpstat.md) (multi-processor statistics) — моніторинг використання CPU по кожному ядру.
+- [sar](./documents/process_and_system_monitoring/sar.md) (system activity reporter) — зібрати, повідомити або зберегти інформацію про системну активність.
+- [vmstat](./documents/process_and_system_monitoring/vmstat.md) (virtual memory statistics) — відстежувати віртуальну пам'ять, процеси та активність CPU.
+- [cpustat](./documents/process_and_system_monitoring/cpustat.md) (CPU statistics) — моніторинг використання CPU окремими процесами.
+- [strace](./documents/process_and_system_monitoring/strace.md) (system call trace) — трасування системних викликів і сигналів.
 
 ## 7. Управління дисками та файловими системами
 
-- [lsblk](./documents/disk_and_filesystem_management/lsblk.md) — вивести список блокових пристроїв.
-- [fdisk](./documents/disk_and_filesystem_management/fdisk.md) — маніпулювати таблицею розділів диска.
-- [mkfs](./documents/disk_and_filesystem_management/mkfs.md) — створити файлову систему Linux.
+- [lsblk](./documents/disk_and_filesystem_management/lsblk.md) (list block devices) — вивести список блокових пристроїв.
+- [fdisk](./documents/disk_and_filesystem_management/fdisk.md) (fixed disk) — маніпулювати таблицею розділів диска.
+- [mkfs](./documents/disk_and_filesystem_management/mkfs.md) (make filesystem) — створити файлову систему Linux.
 - [mount](./documents/disk_and_filesystem_management/mount.md) — змонтувати файлову систему.
-- [blkid](./documents/disk_and_filesystem_management/blkid.md) — знайти та роздрукувати атрибути блокових пристроїв.
+- [blkid](./documents/disk_and_filesystem_management/blkid.md) (block ID) — знайти та роздрукувати атрибути блокових пристроїв.
 
 ## 8. Управління пакетами
 
 Для Debian/Ubuntu:
-- [apt / apt-get](./documents/package_management/apt.md) — керувати встановленням, оновленням та видаленням пакетів.
+- [apt / apt-get](./documents/package_management/apt.md) (Advanced Package Tool) — керувати встановленням, оновленням та видаленням пакетів.
 
 Для CentOS/Red Hat:
-- yum / [dnf](./documents/package_management/dnf.md) — керувати пакетами.
+- yum / [dnf](./documents/package_management/dnf.md) (Dandified YUM) — керувати пакетами.
 
-- [dpkg](./documents/package_management/dpkg.md) — керувати пакетами в Debian-системах.
-- [rpm](./documents/package_management/rpm.md) — керувати пакетами в Red Hat-системах.
+- [dpkg](./documents/package_management/dpkg.md) (Debian package) — керувати пакетами в Debian-системах.
+- [rpm](./documents/package_management/rpm.md) (RPM Package Manager) — керувати пакетами в Red Hat-системах.
 
 ## 9. Робота з архівами
 
-- [tar](./documents/archive_management/tar.md) — створити або розпакувати архіви (.tar, .tar.gz, .tar.bz2).
+- [tar](./documents/archive_management/tar.md) (tape archive) — створити або розпакувати архіви (.tar, .tar.gz, .tar.bz2).
 - [zip](./documents/archive_management/zip.md) та unzip — стиснути та розпакувати ZIP-архіви.
-- [gzip](./documents/archive_management/gzip.md) та gunzip — стиснути та розпакувати файли.
+- [gzip](./documents/archive_management/gzip.md) (GNU zip) та gunzip — стиснути та розпакувати файли.
 - [bzip2](./documents/archive_management/bzip2.md) — стиснення файлів з використанням алгоритму сортування блоків.
 
 ## 10. Мережеві команди
 
 *Налаштування та моніторинг локальних інтерфейсів*
 - [ip](./documents/network_commands/ip.md) — налаштування IP-адрес, інтерфейсів та маршрутизації (заміна `ifconfig`).
-- [netstat](./documents/network_commands/netstat.md) — аналіз активних з'єднань та відкритих портів (застаріла).
-- [ss](./documents/network_commands/ss.md) — аналіз сокетів (сучасна заміна для netstat).
+- [ethtool](./documents/network_commands/ethtool.md) (Ethernet tool) — перегляд та зміна параметрів мережевих карт.
+- [netstat](./documents/network_commands/netstat.md) (network statistics) — аналіз активних з'єднань та відкритих портів (застаріла).
+- [ss](./documents/network_commands/ss.md) (socket statistics) — аналіз сокетів (сучасна заміна для netstat).
 
 *Робота з DNS*
 - [host](./documents/network_commands/host.md) — проста утиліта для DNS-запитів.
-- [nslookup](./documents/network_commands/nslookup.md) — інтерактивна утиліта для запитів до DNS-серверів.
-- [dig](./documents/network_commands/dig.md) — інструмент для детальних DNS-запитів.
+- [nslookup](./documents/network_commands/nslookup.md) (name server lookup) — інтерактивна утиліта для запитів до DNS-серверів.
+- [dig](./documents/network_commands/dig.md) (domain information groper) — інструмент для детальних DNS-запитів.
 
 *Діагностика та сканування мережі*
-- [ping](./documents/network_commands/ping.md) — перевірка доступності вузла та вимірювання затримки.
-- [telnet](./documents/network_commands/telnet.md) — перевірка відкритості TCP-портів.
+- [ping](./documents/network_commands/ping.md) (Packet Inter-Network Groper) — перевірка доступності вузла та вимірювання затримки.
+- [telnet](./documents/network_commands/telnet.md) (teletype network) — перевірка відкритості TCP-портів.
 - [nc](./documents/network_commands/nc.md) (netcat) — утиліта для роботи з TCP/UDP, сканування, передачі даних.
 - [traceroute](./documents/network_commands/traceroute.md) — відстеження маршруту пакетів до вузла.
-- [nmap](./documents/network_commands/nmap.md) — сканер мереж для виявлення хостів та служб.
-- [iftop](./documents/network_commands/iftop.md) — інтерактивний моніторинг мережевого трафіку.
-- [nethogs](./documents/network_commands/nethogs.md) — моніторинг мережевого трафіку по процесах.
+- [nmap](./documents/network_commands/nmap.md) (network mapper) — сканер мереж для виявлення хостів та служб.
+- [iftop](./documents/network_commands/iftop.md) (interface top) — інтерактивний моніторинг мережевого трафіку.
+- [nethogs](./documents/network_commands/nethogs.md) (network hogs) — моніторинг мережевого трафіку по процесах.
 
 *Передача даних та віддалене керування*
-- [wget](./documents/network_commands/wget.md) / [curl](./documents/network_commands/curl.md) — завантаження файлів та даних з веб-ресурсів.
-- [ssh](./documents/network_commands/ssh.md) — безпечне підключення до віддаленого сервера.
-- [scp](./documents/network_commands/scp.md) — безпечне копіювання файлів між хостами.
-- [rsync](./documents/network_commands/rsync.md) — ефективна синхронізація файлів та директорій.
+- [wget](./documents/network_commands/wget.md) (World Wide Web get) / [curl](./documents/network_commands/curl.md) (see URL) — завантаження файлів та даних з веб-ресурсів.
+- [ssh](./documents/network_commands/ssh.md) (secure shell) — безпечне підключення до віддаленого сервера.
+- [scp](./documents/network_commands/scp.md) (secure copy) — безпечне копіювання файлів між хостами.
+- [rsync](./documents/network_commands/rsync.md) (remote sync) — ефективна синхронізація файлів та директорій.
 
 *Безпека та шифрування*
-- [openssl](./documents/network_commands/openssl.md) — набір інструментів для роботи з SSL/TLS та криптографією.
-- [gpg](./documents/network_commands/gpg.md) — утиліта для шифрування та цифрового підпису (GNU Privacy Guard).
-- [ssh-keygen](./documents/network_commands/ssh-keygen.md) — генерація ключів для SSH-аутентифікації.
+- [openssl](./documents/network_commands/openssl.md) (Open Secure Sockets Layer) — набір інструментів для роботи з SSL/TLS та криптографією.
+- [gpg](./documents/network_commands/gpg.md) (GNU Privacy Guard) — утиліта для шифрування та цифрового підпису.
+- [ssh-keygen](./documents/network_commands/ssh-keygen.md) (secure shell key generation) — генерація ключів для SSH-аутентифікації.
 
 ## 11. Системні утиліти
 
 - [shutdown / reboot](./documents/system_utilities/shutdown.md) — вимкнути або перезавантажити систему.
 - [date](./documents/system_utilities/date.md) — показати або встановити системну дату та час.
+- [dmidecode](./documents/system_utilities/dmidecode.md) (DMI decode) — вивести інформацію про апаратне забезпечення.
 - [history](./documents/system_utilities/history.md) — показати список раніше виконаних команд.
 - [man](./documents/system_utilities/man.md) (manual) — відкрити довідкову сторінку для команди.
-- [journalctl](./documents/system_utilities/journalctl.md) — переглянути логи системи (у systemd).
-- [crontab](./documents/system_utilities/crontab.md) — планувати автоматичне виконання завдань.
-- [tmux](./documents/system_utilities/tmux.md) — керування кількома термінальними сесіями в одному вікні.
+- [journalctl](./documents/system_utilities/journalctl.md) (journal control) — переглянути логи системи (у systemd).
+- [lspci](./documents/system_utilities/lspci.md) (list PCI) — вивести інформацію про PCI-пристрої.
+- [lsusb](./documents/system_utilities/lsusb.md) (list USB) — вивести інформацію про USB-пристрої.
+- [lshw](./documents/system_utilities/lshw.md) (list hardware) — вивести інформацію про апаратне забезпечення.
+- [crontab](./documents/system_utilities/crontab.md) (cron table) — планувати автоматичне виконання завдань.
+- [tmux](./documents/system_utilities/tmux.md) (terminal multiplexer) — керування кількома термінальними сесіями в одному вікні.
 - [type](./documents/system_utilities/type.md) — відобразити інформацію про тип команди.
-- [xargs](./documents/system_utilities/xargs.md) — побудувати та виконати командні рядки зі стандартного вводу.
+- [xargs](./documents/system_utilities/xargs.md) (extended arguments) — побудувати та виконати командні рядки зі стандартного вводу.
