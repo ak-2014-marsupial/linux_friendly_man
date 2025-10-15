@@ -37,6 +37,7 @@
 - [cp](./documents/file_and_directory_management/cp.md) (copy) — копіювати файли та директорії.
 - [mv](./documents/file_and_directory_management/mv.md) (move) — перемістити або перейменувати файли та директорії.
 - [rm](./documents/file_and_directory_management/rm.md) (remove) — видалити файли або директорії.
+- [tree](./documents/file_and_directory_management/tree.md) (tree) — вивести структуру директорій у вигляді дерева.
 
 ## 3. Перегляд та редагування файлів
 
@@ -170,5 +171,6 @@
 - [journalctl](./documents/system_utilities/journalctl.md) (journal control) — переглянути логи системи (у systemd) (/var/log/journal/).
 - [crontab](./documents/system_utilities/crontab.md) (cron table) — планувати автоматичне виконання завдань (/var/spool/cron/).
 - [tmux](./documents/system_utilities/tmux.md) (terminal multiplexer) — керування кількома термінальними сесіями в одному вікні.
+- [tee](./documents/system_utilities/tee.md) (T-splitter) — читати зі стандартного вводу та записувати у стандартний вивід та файли.
 - [type](./documents/system_utilities/type.md) — відобразити інформацію про тип команди (вбудована в оболонку).
 - [xargs](./documents/system_utilities/xargs.md) (extended arguments) — побудувати та виконати командні рядки зі стандартного вводу.
