@@ -13,6 +13,7 @@
 - [Мережеві протоколи](./documents/concepts/network_protocols.md) — огляд протоколів моделі OSI.
 - [Linux Network Troubleshooting](./documents/concepts/linux_network_troubleshooting.md) — посібник з діагностики мережевих проблем.
 - [Курс "Linux и Администрирование" (на русском языке)](./documents/LinuxAndAdministration/Readme.md) — повний курс з адміністрування Linux.
+- [Linux Obfuscation Techniques (на русском языке)](./documents/concepts/linux_obfuscation_techniques.md) — збірка трюків та технік для маскування активності в системі.
 - [Кніги по Linux від linux-training.be (на англійскій)](https://linux-training.be/index.php?nav=home) - дуже якісний матеріал. 
 
 ### Performance troubleshooting
