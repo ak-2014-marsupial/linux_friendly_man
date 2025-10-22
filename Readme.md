@@ -167,12 +167,15 @@
 
 ## 13. Системні утиліти
 
+- [at](./documents/system_utilities/at.md) (at a specific time) — планувати одноразове виконання команд у вказаний час.
 - [shutdown / reboot](./documents/system_utilities/shutdown.md) — вимкнути або перезавантажити систему.
 - [history](./documents/system_utilities/history.md) — показати список раніше виконаних команд (~/.bash_history або аналог).
 - [man](./documents/system_utilities/man.md) (manual) — відкрити довідкову сторінку для команди (/usr/share/man).
 - [journalctl](./documents/system_utilities/journalctl.md) (journal control) — переглянути логи системи (у systemd) (/var/log/journal/).
 - [crontab](./documents/system_utilities/crontab.md) (cron table) — планувати автоматичне виконання завдань (/var/spool/cron/).
+- [screen](./documents/system_utilities/screen.md) (GNU Screen) — керування кількома термінальними сесіями (класичний аналог tmux).
 - [tmux](./documents/system_utilities/tmux.md) (terminal multiplexer) — керування кількома термінальними сесіями в одному вікні.
+- [Порівняння tmux та screen](./documents/system_utilities/ScreenVsTmux.md) — детальний аналіз та порівняння двох термінальних мультиплексорів.
 - [tee](./documents/system_utilities/tee.md) (T-splitter) — читати зі стандартного вводу та записувати у стандартний вивід та файли.
 - [type](./documents/system_utilities/type.md) — відобразити інформацію про тип команди (вбудована в оболонку).
 - [xargs](./documents/system_utilities/xargs.md) (extended arguments) — побудувати та виконати командні рядки зі стандартного вводу.
