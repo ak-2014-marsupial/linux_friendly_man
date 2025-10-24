@@ -172,6 +172,7 @@
 - [history](./documents/system_utilities/history.md) — показати список раніше виконаних команд (~/.bash_history або аналог).
 - [man](./documents/system_utilities/man.md) (manual) — відкрити довідкову сторінку для команди (/usr/share/man).
 - [journalctl](./documents/system_utilities/journalctl.md) (journal control) — переглянути логи системи (у systemd) (/var/log/journal/).
+- [systemctl](./documents/system_utilities/systemctl.md) (system control) — керування системними сервісами та станом системи (systemd).
 - [crontab](./documents/system_utilities/crontab.md) (cron table) — планувати автоматичне виконання завдань (/var/spool/cron/).
 - [screen](./documents/system_utilities/screen.md) (GNU Screen) — керування кількома термінальними сесіями (класичний аналог tmux).
 - [tmux](./documents/system_utilities/tmux.md) (terminal multiplexer) — керування кількома термінальними сесіями в одному вікні.
