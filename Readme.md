@@ -184,3 +184,4 @@
 - [tee](./documents/system_utilities/tee.md) (T-splitter) — читати зі стандартного вводу та записувати у стандартний вивід та файли.
 - [type](./documents/system_utilities/type.md) — відобразити інформацію про тип команди (вбудована в оболонку).
 - [xargs](./documents/system_utilities/xargs.md) (extended arguments) — побудувати та виконати командні рядки зі стандартного вводу.
+- [watch](./documents/system_utilities/watch.md) (watch) — виконувати команду періодично, показуючи її вивід.
