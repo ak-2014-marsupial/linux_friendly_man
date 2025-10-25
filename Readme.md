@@ -17,7 +17,7 @@
 - [Linux Obfuscation Techniques (на русском языке)](./documents/concepts/linux_obfuscation_techniques.md) — збірка трюків та технік для маскування активності в системі.
 - [Кніги по Linux від linux-training.be (на англійскій)](https://linux-training.be/index.php?nav=home) - дуже якісний матеріал. 
 
-### Performance troubleshooting
+*Performance troubleshooting*
 
 - [Діагностика продуктивності: CPU](./documents/concepts/Performance_troubleshooting/CPU%20Troubleshooting_uk.md) — аналіз та вирішення проблем з високим навантаженням на процесор.
 - [Діагностика продуктивності: Memory](./documents/concepts/Performance_troubleshooting/Memory%20Troubleshooting_uk.md) — посібник з виявлення та усунення проблем з пам'яттю.
@@ -73,21 +73,21 @@
 - [su](./documents/user_and_permission_management/su.md) (switch user) — переключитися на іншого користувача (/etc/passwd, /etc/shadow).
 - [sudo](./documents/user_and_permission_management/sudo.md) (superuser do) — виконати команду з правами адміністратора (/etc/sudoers).
 
-## 6. Моніторинг та управління процесами
+## 6. Моніторинг системи, процесів та ресурсів
 
+*Управління процесами*
 - [ps](./documents/process_and_system_monitoring/ps.md) (process status) — показати список поточних процесів (/proc/[pid]/stat, /proc/[pid]/status).
 - [pstree](./documents/process_and_system_monitoring/pstree.md) (process status tree) — візуалізувати процеси у вигляді дерева (/proc/[pid]/stat).
-- [top](./documents/process_and_system_monitoring/top.md) (table of processes) — динамічно відстежувати процеси та використання ресурсів (/proc/stat, /proc/meminfo, /proc/[pid]/stat).
-- [htop](./documents/process_and_system_monitoring/htop.md) (Hisham's top) — покращена, інтерактивна версія top (/proc/stat, /proc/meminfo, /proc/[pid]/stat).
 - [kill](./documents/process_and_system_monitoring/kill.md) — завершити процес за його ID (PID).
 - [pkill](./documents/process_and_system_monitoring/pkill.md) (process kill) — завершити процес за його іменем.
-- [pidstat](./documents/process_and_system_monitoring/pidstat.md) (process ID statistics) — моніторинг статистики для окремих процесів (/proc/[pid]/stat).
 - [fuser](./documents/process_and_system_monitoring/fuser.md) (File USER) — ідентифікувати процеси, що використовують файли або сокети (/proc/[pid]/fd/).
 - [lsof](./documents/process_and_system_monitoring/lsof.md) (list open files) — показати список файлів, відкритих процесами (/proc/[pid]/fd/).
 - [strace](./documents/process_and_system_monitoring/strace.md) (system call trace) — трасування системних викликів і сигналів (syscall: ptrace).
 
-## 7. Моніторинг системних ресурсів
-
+*Моніторинг ресурсів*
+- [top](./documents/process_and_system_monitoring/top.md) (table of processes) — динамічно відстежувати процеси та використання ресурсів (/proc/stat, /proc/meminfo, /proc/[pid]/stat).
+- [htop](./documents/process_and_system_monitoring/htop.md) (Hisham's top) — покращена, інтерактивна версія top (/proc/stat, /proc/meminfo, /proc/[pid]/stat).
+- [pidstat](./documents/process_and_system_monitoring/pidstat.md) (process ID statistics) — моніторинг статистики для окремих процесів (/proc/[pid]/stat).
 - [df](./documents/process_and_system_monitoring/df.md) (disk free) — показати використання дискового простору (syscall: statfs).
 - [du](./documents/process_and_system_monitoring/du.md) (disk usage) — оцінити розмір директорії або файлу (читає метадані файлової системи).
 - [free](./documents/process_and_system_monitoring/free.md) — показати обсяг вільної та використаної пам'яті (/proc/meminfo).
@@ -98,7 +98,7 @@
 - [vmstat](./documents/process_and_system_monitoring/vmstat.md) (virtual memory statistics) — відстежувати віртуальну пам'ять, процеси та активність CPU (/proc/vmstat, /proc/stat).
 - [cpustat](./documents/process_and_system_monitoring/cpustat.md) (CPU statistics) — моніторинг використання CPU окремими процесами (/proc/[pid]/stat).
 
-## 8. Управління дисками та файловими системами
+## 7. Управління дисками та файловими системами
 
 - [lsblk](./documents/disk_and_filesystem_management/lsblk.md) (list block devices) — вивести список блокових пристроїв (/sys/block).
 - [fdisk](./documents/disk_and_filesystem_management/fdisk.md) (fixed disk) — маніпулювати таблицею розділів диска (таблиця розділів пристрою).
@@ -106,31 +106,36 @@
 - [mount](./documents/disk_and_filesystem_management/mount.md) — змонтувати файлову систему (/proc/mounts).
 - [blkid](./documents/disk_and_filesystem_management/blkid.md) (block ID) — знайти та роздрукувати атрибути блокових пристроїв (кеш /etc/blkid.tab, дані з пристроїв).
 
-## 9. Управління пакетами
+## 8. Управління пакетами
 
-Для Debian/Ubuntu:
+*Для дистрибутивів на основі Debian (Ubuntu)*
 - [apt / apt-get](./documents/package_management/apt.md) (Advanced Package Tool) — керувати встановленням, оновленням та видаленням пакетів (/var/lib/dpkg/status, /var/lib/apt/lists/).
+- [dpkg](./documents/package_management/dpkg.md) (Debian package) — низькорівневе керування пакетами.
 
-Для CentOS/Red Hat:
+*Для дистрибутивів на основі Red Hat (CentOS, Fedora)*
 - yum / [dnf](./documents/package_management/dnf.md) (Dandified YUM) — керувати пакетами (/var/lib/rpm/Packages, /var/cache/dnf/).
+- [rpm](./documents/package_management/rpm.md) (RPM Package Manager) — низькорівневе керування пакетами.
 
-- [dpkg](./documents/package_management/dpkg.md) (Debian package) — керувати пакетами в Debian-системах (/var/lib/dpkg/status).
-- [rpm](./documents/package_management/rpm.md) (RPM Package Manager) — керувати пакетами в Red Hat-системах (/var/lib/rpm/Packages).
-
-## 10. Робота з архівами
+## 9. Робота з архівами
 
 - [tar](./documents/archive_management/tar.md) (tape archive) — створити або розпакувати архіви (.tar, .tar.gz, .tar.bz2).
 - [zip](./documents/archive_management/zip.md) та unzip — стиснути та розпакувати ZIP-архіви.
 - [gzip](./documents/archive_management/gzip.md) (GNU zip) та gunzip — стиснути та розпакувати файли.
 - [bzip2](./documents/archive_management/bzip2.md) — стиснення файлів з використанням алгоритму сортування блоків.
 
-## 11. Мережеві команди
+## 10. Мережеві команди
 
-*Налаштування та моніторинг локальних інтерфейсів*
+*Мережеві інтерфейси та з'єднання*
 - [ip](./documents/network_commands/ip.md) — налаштування IP-адрес, інтерфейсів та маршрутизації (kernel netlink socket).
 - [ethtool](./documents/network_commands/ethtool.md) (Ethernet tool) — перегляд та зміна параметрів мережевих карт (ioctl syscalls до драйвера).
 - [netstat](./documents/network_commands/netstat.md) (network statistics) — аналіз активних з'єднань та відкритих портів (/proc/net/tcp).
 - [ss](./documents/network_commands/ss.md) (socket statistics) — аналіз сокетів (kernel netlink socket).
+
+*Керування брандмауером*
+- [iptables](./documents/network_commands/iptables.md) (IP tables) — класичний інструмент для фільтрації пакетів.
+- [nftables](./documents/network_commands/nftables.md) (Netfilter tables) — сучасна заміна для `iptables`.
+- [ufw](./documents/network_commands/ufw.md) (Uncomplicated Firewall) — простий інтерфейс для `iptables`.
+- [firewalld](./documents/network_commands/firewalld.md) (Firewall Daemon) — динамічний менеджер брандмауера для систем на базі Red Hat.
 
 *Робота з DNS*
 - [host](./documents/network_commands/host.md) — проста утиліта для DNS-запитів (DNS-запити до сервера з /etc/resolv.conf).
@@ -156,7 +161,6 @@
 - [openssl](./documents/network_commands/openssl.md) (Open Secure Sockets Layer) — набір інструментів для роботи з SSL/TLS та криптографією.
 - [gpg](./documents/network_commands/gpg.md) (GNU Privacy Guard) — утиліта для шифрування та цифрового підпису.
 - [ssh-keygen](./documents/network_commands/ssh-keygen.md) (secure shell key generation) — генерація ключів для SSH-аутентифікації.
-
 ## 12. Інформація про систему та обладнання
 
 - [date](./documents/system_utilities/date.md) — показати або встановити системну дату та час (syscall: gettimeofday).
