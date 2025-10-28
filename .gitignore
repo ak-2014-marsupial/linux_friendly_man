@@ -3,5 +3,6 @@
 
 .idea/
 .env
+tmp/
 PromptAddNewCommandByReadme.txt
 Command_Classifier.md
