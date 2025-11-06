@@ -8,6 +8,7 @@
 
 ## 1. Теоретичні основи
 
+- [Регулярні вирази (Regular Expressions)](./documents/concepts/regular_expressions.md) — огляд синтаксису та приклади використання.
 - [Права доступу та спеціальні атрибути](./documents/concepts/permissions_and_special_attributes.md) — огляд стандартних та спеціальних прав доступу.
 - [Ключові системні файли та директорії](./documents/concepts/key_files_and_directories.md) — огляд ключових файлів та директорій.
 - [systemd](./documents/concepts/systemd.md) — огляд системи ініціалізації та менеджера сервісів.
