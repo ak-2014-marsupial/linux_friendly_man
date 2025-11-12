@@ -10,6 +10,7 @@
 
 - [Регулярні вирази (Regular Expressions)](./documents/concepts/regular_expressions.md) — огляд синтаксису та приклади використання.
 - [Права доступу та спеціальні атрибути](./documents/concepts/permissions_and_special_attributes.md) — огляд стандартних та спеціальних прав доступу.
+- [Обмеження прав доступу до скриптів та unit-файлів (на русском языке)](./documents/concepts/linux_perms_security.md) — поширені проблеми з правами доступу та їх вирішення.
 - [Ключові системні файли та директорії](./documents/concepts/key_files_and_directories.md) — огляд ключових файлів та директорій.
 - [systemd](./documents/concepts/systemd.md) — огляд системи ініціалізації та менеджера сервісів.
 - [Мережеві протоколи](./documents/concepts/network_protocols.md) — огляд протоколів моделі OSI.
