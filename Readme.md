@@ -130,6 +130,7 @@
 
 *Мережеві інтерфейси та з'єднання*
 - [ip](./documents/network_commands/ip.md) — налаштування IP-адрес, інтерфейсів та маршрутизації (kernel netlink socket).
+- [nmcli](./documents/network_commands/nmcli.md) (NetworkManager command-line interface) — керування мережевими з'єднаннями через NetworkManager.
 - [ethtool](./documents/network_commands/ethtool.md) (Ethernet tool) — перегляд та зміна параметрів мережевих карт (ioctl syscalls до драйвера).
 - [netstat](./documents/network_commands/netstat.md) (network statistics) — аналіз активних з'єднань та відкритих портів (/proc/net/tcp).
 - [ss](./documents/network_commands/ss.md) (socket statistics) — аналіз сокетів (kernel netlink socket).

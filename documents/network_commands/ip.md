@@ -123,3 +123,106 @@ ip [ ОПЦІЇ ] ОБ'ЄКТ { КОМАНДА | help }
     ```bash
     ip -s link
     ```
+
+---
+
+### **Додаткові приклади з поясненнями**
+
+#### **1. `ip address show` — Перегляд IP-адрес**
+
+Ця команда показує IP-адреси, призначені мережевим інтерфейсам.
+
+```bash
+ip address show
+```
+
+**Приклад виводу:**
+```
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 00:15:5d:01:02:03 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.101/24 brd 192.168.1.255 scope global dynamic noprefixroute eth0
+       valid_lft 86350sec preferred_lft 86350sec
+    inet6 fe80::215:5dff:fe01:203/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+```
+
+*   **`1: lo`**: Інтерфейс `loopback` (локальна петля), завжди активний.
+*   **`2: eth0`**: Фізичний мережевий інтерфейс.
+*   **`inet 192.168.1.101/24`**: Призначена IPv4-адреса з маскою `/24`.
+*   **`scope global`**: Адреса доступна ззовні. `scope host` — тільки в межах хоста.
+*   **`dynamic`**: Адреса отримана динамічно (наприклад, через DHCP).
+*   **`inet6 fe80::...`**: Локальна IPv6-адреса (`link-local`).
+
+#### **2. `ip route show` — Перегляд таблиці маршрутизації**
+
+Команда показує, як система буде відправляти мережевий трафік.
+
+```bash
+ip route show
+```
+
+**Приклад виводу:**
+```
+default via 192.168.1.1 dev eth0 proto dhcp metric 100 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 
+192.168.1.0/24 dev eth0 proto kernel scope link src 192.168.1.101 metric 100
+```
+
+*   **`default via 192.168.1.1 dev eth0`**: Маршрут за замовчуванням. Увесь трафік, для якого немає конкретного маршруту, піде через шлюз `192.168.1.1` на інтерфейсі `eth0`.
+*   **`192.168.1.0/24 dev eth0`**: Маршрут для локальної мережі. Трафік до будь-якої адреси в діапазоні `192.168.1.0` - `192.168.1.255` відправлятиметься напряму через інтерфейс `eth0`.
+*   **`172.17.0.0/16 dev docker0`**: Маршрут, створений ядром (`proto kernel`) для мережі Docker.
+
+#### **3. `ip neighbour show` — Перегляд ARP-таблиці**
+
+Показує відповідність між IP-адресами та MAC-адресами пристроїв у локальній мережі.
+
+```bash
+ip neighbour show
+```
+
+**Приклад виводу:**
+```
+192.168.1.1 dev eth0 lladdr 00:aa:bb:cc:dd:ee REACHABLE
+192.168.1.5 dev eth0 lladdr 11:22:33:44:55:66 STALE
+```
+
+*   **`192.168.1.1 dev eth0`**: IP-адреса сусіда та інтерфейс, через який він доступний.
+*   **`lladdr 00:aa:bb:cc:dd:ee`**: MAC-адреса (`link-layer address`) цього сусіда.
+*   **`REACHABLE`**: Запис актуальний, нещодавно було підтвердження доступності.
+*   **`STALE`**: Запис застарів, але все ще вважається дійсним. При наступному зверненні система перевірить його актуальність.
+*   Інші можливі стани: `DELAY`, `PROBE`, `FAILED`.
+
+#### **4. `ip -s link` — Перегляд статистики інтерфейсів**
+
+Ключ `-s` (statistics) додає детальну статистику про роботу інтерфейсів.
+
+```bash
+ip -s link
+```
+
+**Приклад виводу для одного інтерфейсу:**
+```
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether 00:15:5d:01:02:03 brd ff:ff:ff:ff:ff:ff
+    RX: bytes  packets  errors  dropped overrun mcast   
+    12345678   98765    0       0       0       0       
+    TX: bytes  packets  errors  dropped carrier collsns 
+    87654321   56789    0       0       0       0
+```
+
+*   **`RX` (Receive)**: Статистика отриманих даних.
+    *   **`bytes`**: Кількість отриманих байтів.
+    *   **`packets`**: Кількість отриманих пакетів.
+    *   **`errors`**: Помилки при отриманні.
+    *   **`dropped`**: Пакети, що були відкинуті ядром (наприклад, через брак пам'яті).
+*   **`TX` (Transmit)**: Статистика відправлених даних.
+    *   **`bytes`**: Кількість відправлених байтів.
+    *   **`packets`**: Кількість відправлених пакетів.
+    *   **`errors`**: Помилки при відправленні.
+    *   **`carrier`**: Помилки, пов'язані з фізичним з'єднанням (наприклад, кабель від'єднано).
