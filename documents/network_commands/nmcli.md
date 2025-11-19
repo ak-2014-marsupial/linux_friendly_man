@@ -1,3 +1,5 @@
+[Додатковий матеріал: https://www.geeksforgeeks.org/linux-unix/nmcli-command-in-linux-with-examples/]
+
 # nmcli
 
 Команда `nmcli` (NetworkManager command-line interface) — це утиліта командного рядка для керування NetworkManager. Вона дозволяє переглядати стан мережі, керувати мережевими з'єднаннями та пристроями. Це основний інструмент для налаштування мережі в сучасних дистрибутивах Linux, таких як RHEL, CentOS, Fedora, Ubuntu та Debian.

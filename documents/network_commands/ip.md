@@ -226,3 +226,48 @@ ip -s link
     *   **`packets`**: Кількість відправлених пакетів.
     *   **`errors`**: Помилки при відправленні.
     *   **`carrier`**: Помилки, пов'язані з фізичним з'єднанням (наприклад, кабель від'єднано).
+
+### **Додаткові приклади з Інтернету з поясненнями**
+
+*   `ip help` - **Показати довідку** по команді `ip`.
+*   `ip link show` - **Показати всі мережеві інтерфейси**.
+*   `ip link ls up` - **Показати тільки активні мережеві інтерфейси**.
+*   `ip link show dev [device]` - **Показати інформацію про конкретний інтерфейс**.
+*   `ip link show dev enp0s3` - **Приклад попередньої команди для інтерфейсу `enp0s3`**.
+*   `ip -s link` - **Показати статистику для мережевих інтерфейсів**.
+*   `ip -s link ls [interface]` - **Показати статистику для конкретного інтерфейсу**.
+*   `ip -s link ls enp0s3` - **Приклад попередньої команди для інтерфейсу `enp0s3`**.
+*   `ip -s -s link ls enp0s3` - **Показати більш детальну статистику для конкретного інтерфейсу**.
+*   `sudo ip link set enp0s3 down` - **Вимкнути інтерфейс `enp0s3`**.
+*   `ip link set enp0s3 up` - **Увімкнути інтерфейс `enp0s3`**.
+*   `sudo ip link set txqueuelen [number] dev [interface]` - **Встановити довжину черги передачі для інтерфейсу**.
+*   `sudo ip link set txqueuelen 10000 dev enp0s3` - **Приклад попередньої команди**.
+*   `sudo ip link set mtu [number] dev [interface]` - **Встановити MTU для інтерфейсу**.
+*   `sudo ip link set mtu 10000 dev enp0s3` - **Приклад попередньої команди**.
+*   `ip link set dev [interface] address [mac_address]` - **Встановити MAC-адресу для інтерфейсу**.
+*   `ip addr` - **Показати IP-адреси всіх інтерфейсів**.
+*   `ip addr show` - **Те саме, що й `ip addr`**.
+*   `ip addr show dev enp0s3` - **Показати IP-адреси для конкретного інтерфейсу `enp0s3`**.
+*   `ip -4 addr` - **Показати тільки IPv4-адреси**.
+*   `ip -6 addr` - **Показати тільки IPv6-адреси**.
+*   `sudo ip addr add [ip_address] dev [interface]` - **Додати IP-адресу до інтерфейсу**.
+*   `sudo ip addr add 10.0.2.12 dev enp0s3` - **Приклад попередньої команди**.
+*   `ip a` - **Скорочений варіант `ip addr`**.
+*   `sudo ip addr add brd [ip_address] dev [interface]` - **Додати широкомовну адресу до інтерфейсу**.
+*   `ip addr del [ip_address] dev [interface]` - **Видалити IP-адресу з інтерфейсу**.
+*   `ip addr del 10.0.2.12/32 dev enp0s3` - **Приклад попередньої команди**.
+*   `ip route` - **Показати таблицю маршрутизації**.
+*   `ip route list` - **Те саме, що й `ip route`**.
+*   `ip route list [selector]` - **Показати маршрути за певним селектором**.
+*   `ip route list table local` - **Показати локальну таблицю маршрутизації**.
+*   `ip route list [ip_address]` - **Показати маршрут для конкретної IP-адреси**.
+*   `ip route add [ip_address] dev [interface]` - **Додати маршрут для IP-адреси через інтерфейс**.
+*   `ip route add [ip_address] via [gateway_IP] dev [interface]` - **Додати маршрут для IP-адреси через шлюз**.
+*   `sudo ip route add 192.168.0.0/24 via 192.168.0.254 dev enp0s3` - **Приклад попередньої команди**.
+*   `sudo ip route add default 192.168.0.0/24 via 192.168.0.254 dev enp0s3` - **Додати маршрут за замовчуванням**.
+*   `ip route del [ip_address]` - **Видалити маршрут для IP-адреси**.
+*   `ip route del default` - **Видалити маршрут за замовчуванням**.
+*   `ip neigh show` - **Показати ARP-таблицю**.
+*   `ip neigh add [ip_address] dev [interface]` - **Додати запис до ARP-таблиці**.
+*   `ip neigh del [ip_address] dev [interface]` - **Видалити запис з ARP-таблиці**.
+*   `ip -c link` - **Показати інформацію про мережеві інтерфейси з кольоровим виводом**.
