@@ -165,6 +165,9 @@
 - [openssl](./documents/network_commands/openssl.md) (Open Secure Sockets Layer) — набір інструментів для роботи з SSL/TLS та криптографією.
 - [gpg](./documents/network_commands/gpg.md) (GNU Privacy Guard) — утиліта для шифрування та цифрового підпису.
 - [ssh-keygen](./documents/network_commands/ssh-keygen.md) (secure shell key generation) — генерація ключів для SSH-аутентифікації.
+
+*Специфічне для вендорів*
+- [Cisco Commands Cheatsheet](./documents/network_commands/Cisco_Commands_Cheatsheet.md) — шпаргалка по командам Cisco.
 ## 12. Інформація про систему та обладнання
 
 - [date](./documents/system_utilities/date.md) — показати або встановити системну дату та час (syscall: gettimeofday).
