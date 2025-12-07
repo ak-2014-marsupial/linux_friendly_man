@@ -13,6 +13,7 @@
 - [Обмеження прав доступу до скриптів та unit-файлів (на русском языке)](./documents/concepts/linux_perms_security.md) — поширені проблеми з правами доступу та їх вирішення.
 - [Ключові системні файли та директорії](./documents/concepts/key_files_and_directories.md) — огляд ключових файлів та директорій.
 - [systemd](./documents/concepts/systemd.md) — огляд системи ініціалізації та менеджера сервісів.
+- [Резервне копіювання (Утиліта tar)](./documents/concepts/BackUpTar.md) — ітогові інструкції по резервному копіюванню.
 - [Мережеві протоколи](./documents/concepts/network_protocols.md) — огляд протоколів моделі OSI.
 - [Linux Network Troubleshooting](./documents/concepts/linux_network_troubleshooting.md) — посібник з діагностики мережевих проблем.
 - [Курс "Linux и Администрирование" (на русском языке)](./documents/LinuxAndAdministration/Readme.md) — повний курс з адміністрування Linux.
