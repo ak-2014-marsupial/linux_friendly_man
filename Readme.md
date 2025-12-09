@@ -161,6 +161,7 @@
 - [ssh](./documents/network_commands/ssh.md) (secure shell) — безпечне підключення до віддаленого сервера.
 - [scp](./documents/network_commands/scp.md) (secure copy) — безпечне копіювання файлів між хостами.
 - [rsync](./documents/network_commands/rsync.md) (remote sync) — ефективна синхронізація файлів та директорій.
+- [rsync (посібник з sudo)](./documents/network_commands/rsync_sudo_sync_guide.md) — практичний приклад синхронізації з підвищеними правами.
 
 *Безпека та шифрування*
 - [openssl](./documents/network_commands/openssl.md) (Open Secure Sockets Layer) — набір інструментів для роботи з SSL/TLS та криптографією.
